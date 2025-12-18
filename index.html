@@ -1,11 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmartServe-Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-black">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+    <svg class="size-full absolute -z-10 inset-0" width="1440" height="720" viewBox="0 0 1440 720" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#1D293D" stroke-opacity=".7" d="M-15.227 702.342H1439.7" />
+        <circle cx="711.819" cy="372.562" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+        <circle cx="16.942" cy="20.834" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+        <path stroke="#1D293D" stroke-opacity=".7" d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7" />
+        <circle cx="782.595" cy="411.166" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+    </svg>
+
+    <nav
+        class="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-white text-sm">
+        <h1 class="text-xl font-bold">SmartServe-Solutions</h1>
+        <div class="hidden md:flex items-center gap-8 transition duration-500">
+            <a href="/" class="hover:text-slate-300 transition"> Home </a>
+            <a href="/products" class="hover:text-slate-300 transition">
+                Services
+            </a>
+            <a href="/stories" class="hover:text-slate-300 transition">
+                Track Request
+            </a>
+            <a href="/pricing" class="hover:text-slate-300 transition">
+                Content Us
+            </a>
+        </div>
+
+        <button
+            class="hidden md:block px-6 py-2.5 text-black bg-white hover:bg-slate-200 active:scale-95 transition-all rounded-full">
+            Login
+        </button>
+        <button id="open-menu" class="md:hidden active:scale-90 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <section
+        class="flex flex-col max-md:gap-20 md:flex-row pb-20 items-center justify-between mt-20 px-4 md:px-16 lg:px-24 xl:px-32">
+        <div class="flex flex-col items-center md:items-start">
+            <!-- Community Badge -->
+            <div
+                class="flex flex-wrap items-center justify-center p-1.5 rounded-full border border-slate-600 text-white text-xs">
+                <div class="flex items-center">
+                    <img class="size-7 rounded-full border-3 border-white"
+                        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=50" alt="customer1" />
+                    <img class="size-7 rounded-full border-3 border-white -translate-x-2"
+                        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=50" alt="customer2" />
+                    <img class="size-7 rounded-full border-3 border-white -translate-x-4"
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=50&h=50&auto=format&fit=crop"
+                        alt="customer3" />
+                </div>
+                <p class="-translate-x-2">
+                    Trusted by 1M+ customers & service professionals
+                </p>
+            </div>
+
+            <!-- Main Heading -->
+            <h1
+                class="text-center md:text-left text-5xl leading-[68px] md:text-5xl md:leading-[84px] font-medium max-w-xl text-slate-50">
+                Smart, Fast & Reliable<br />
+                Service Management Platform
+            </h1>
+
+            <!-- Description -->
+            <p class="text-center md:text-left text-sm text-slate-200 max-w-lg mt-2">
+                SmartServe Solutions is a web-based service management system that
+                enables customers to request services online, track service status in
+                real time, and make secure digital payments—eliminating manual
+                processes and delays.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-4 mt-8 text-sm">
+                <button class="bg-white hover:bg-slate-200 text-black active:scale-95 rounded-md px-7 h-11">
+                    Request a Service
+                </button>
+                <button
+                    class="flex items-center gap-2 border border-slate-600 active:scale-95 hover:bg-white/10 transition text-white rounded-md px-6 h-11">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-video-icon lucide-video">
+                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                        <rect x="2" y="6" width="14" height="12" rx="2" />
+                    </svg>
+                    <span>View How It Works</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Image -->
+        <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/hero-section-showcase-3.png"
+            alt="SmartServe dashboard preview" class="max-w-xs sm:max-w-sm lg:max-w-md transition-all duration-300" />
+    </section>
+
+    <section class="py-12 text-gray-100 sm:py-12 lg:py-16">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <div class="max-w-xl mx-auto text-center xl:max-w-2xl">
+                <h2 class="text-3xl font-bold leading-tight text-gray-50 sm:text-4xl xl:text-4xl mb-6">
+                    Powerful Features for Smart Service Management
+                </h2>
+                <p class="mb-4">
+                    SmartServe Solutions offers essential services that simplify service
+                    management, improve transparency, and enhance operational
+                    efficiency.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div
+                class="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
+                <!-- Service 1 -->
+                <div class="relative">
+                    <div class="absolute -inset-1">
+                        <div
+                            class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                        <div class="p-9">
+                            <!-- Icon -->
+                            <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M8 7h8M8 11h8M8 15h6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
+                                Online Service Requests
+                            </h3>
+                            <p class="mt-6 text-base text-gray-600">
+                                Customers can submit service requests online anytime,
+                                eliminating manual processes and improving convenience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                    <div class="p-9">
+                        <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
+                            Real-Time Service Tracking
+                        </h3>
+                        <p class="mt-6 text-base text-gray-600">
+                            Track the status of service requests in real time, ensuring
+                            transparency and timely updates for customers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="relative">
+                    <div class="absolute -inset-1">
+                        <div
+                            class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                        <div class="p-9">
+                            <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <rect x="3" y="7" width="18" height="10" rx="2" />
+                                <path d="M16 11h.01" />
+                            </svg>
+                            <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
+                                Secure Digital Payments
+                            </h3>
+                            <p class="mt-6 text-base text-gray-600">
+                                Enable safe and reliable online payments through secure
+                                digital payment gateways integrated into the system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                    <div class="p-9">
+                        <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a4 4 0 0 0-4-4h-1" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M3 20v-2a4 4 0 0 1 4-4h2" />
+                        </svg>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
+                            Technician Assignment
+                        </h3>
+                        <p class="mt-6 text-base text-gray-600">
+                            Admins can assign technicians efficiently based on availability
+                            and service requirements to ensure faster resolution.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="relative">
+                    <div class="absolute -inset-1">
+                        <div
+                            class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                        <div class="p-9">
+                            <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M3 3v18h18" />
+                                <path d="M7 13l3-3 4 4 5-5" />
+                            </svg>
+                            <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
+                                Reports & Analytics
+                            </h3>
+                            <p class="mt-6 text-base text-gray-600">
+                                Generate detailed reports and analytics on services,
+                                technicians, and payments to support informed business
+                                decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                    <div class="p-9">
+                        <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
+                            Centralized Admin Dashboard
+                        </h3>
+                        <p class="mt-6 text-base text-gray-600">
+                            Access a centralized dashboard to monitor service requests,
+                            technician activity, and payment status in real time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="relative py-10 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl text-white font-extrabold mx-auto md:text-6xl lg:text-5xl">
+                    How SmartServe Works
+                </h2>
+                <p class="max-w-2xl mx-auto mt-4 text-base text-gray-400 leading-relaxed md:text-2xl">
+                    A simple 3-step process to request, track, and complete services
+                    online
+                </p>
+            </div>
+
+            <!-- Steps -->
+            <div class="relative mt-12 lg:mt-20">
+                <div class="absolute inset-x-0 hidden xl:px-44 top-2 md:block md:px-20 lg:px-28">
+                    <img alt="" loading="lazy" width="1000" height="500" decoding="async" data-nimg="1" class="w-full"
+                        style="color: transparent"
+                        src="https://cdn.rareblocks.xyz/collection/celebration/images/steps/2/curved-dotted-line.svg" />
+                </div>
+
+                <div class="relative grid grid-cols-1 text-center gap-y-12 md:grid-cols-3 gap-x-12">
+                    <!-- Step 1 -->
+                    <div>
+                        <div
+                            class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl font-semibold text-gray-700">1</span>
+                        </div>
+                        <h3 class="mt-6 text-xl text-white font-semibold leading-tight md:mt-10">
+                            Request a Service
+                        </h3>
+                        <p class="mt-4 text-base text-gray-400 md:text-lg">
+                            Customers submit service requests online by providing service
+                            details and requirements.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div>
+                        <div
+                            class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl font-semibold text-gray-700">2</span>
+                        </div>
+                        <h3 class="mt-6 text-xl text-white font-semibold leading-tight md:mt-10">
+                            Service Assignment & Tracking
+                        </h3>
+                        <p class="mt-4 text-base text-gray-400 md:text-lg">
+                            The admin assigns a technician, and customers can track service
+                            status in real time.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div>
+                        <div
+                            class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
+                            <span class="text-xl font-semibold text-gray-700">3</span>
+                        </div>
+                        <h3 class="mt-6 text-xl text-white font-semibold leading-tight md:mt-10">
+                            Service Completion & Payment
+                        </h3>
+                        <p class="mt-4 text-base text-gray-400 md:text-lg">
+                            The technician completes the service, and the customer makes a
+                            secure online payment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Glow (unchanged) -->
+        <div class="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style="
+          background: radial-gradient(
+            1.89deg,
+            rgba(34, 78, 95, 0.4) -1000%,
+            rgba(191, 227, 205, 0.26) 1500.74%,
+            rgba(34, 140, 165, 0.41) 56.49%,
+            rgba(28, 47, 99, 0.11) 1150.91%
+          );
+        "></div>
+    </section>
+
+    <section class="py-16 bg-black text-gray-100">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+
+            <!-- Section Heading -->
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                    Business Benefits of SmartServe Solutions
+                </h2>
+                <p class="mt-4 text-gray-400">
+                    Designed to improve efficiency, reduce costs, and enhance customer satisfaction.
+                </p>
+            </div>
+
+            <!-- Benefits Layout -->
+            <div class="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Benefit 1 -->
+                <div class="border border-gray-800 rounded-xl p-6 bg-gray-900/60">
+                    <svg class="w-8 h-8 text-indigo-500 mb-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M13 3L4 14h7l-1 7 9-11h-7l1-7z" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-white">
+                        Faster Service Resolution
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Automated workflows significantly reduce service response and completion time.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="border border-gray-800 rounded-xl p-6 bg-gray-900/60">
+                    <svg class="w-8 h-8 text-indigo-500 mb-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M7 8h10M7 12h4m1 8a9 9 0 1 0-9-9" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-white">
+                        Improved Customer Experience
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Customers stay informed throughout the service lifecycle, increasing trust and satisfaction.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="border border-gray-800 rounded-xl p-6 bg-gray-900/60">
+                    <svg class="w-8 h-8 text-indigo-500 mb-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M12 8c-3 0-6 2-6 5s3 5 6 5 6-2 6-5-3-5-6-5z" />
+                        <path d="M12 2v6m0 10v4" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-white">
+                        Reduced Operational Costs
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Less paperwork and manual coordination lower administrative overhead.
+                    </p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="border border-gray-800 rounded-xl p-6 bg-gray-900/60">
+                    <svg class="w-8 h-8 text-indigo-500 mb-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M3 3v18h18" />
+                        <path d="M7 13l3-3 4 4 5-5" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-white">
+                        Better Decision-Making
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Centralized data helps management analyze performance and optimize resources.
+                    </p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="border border-gray-800 rounded-xl p-6 bg-gray-900/60">
+                    <svg class="w-8 h-8 text-indigo-500 mb-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M12 11c1.66 0 3-1.34 3-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3z" />
+                        <path d="M5.5 20a6.5 6.5 0 0 1 13 0" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-white">
+                        Higher Transparency & Accountability
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Every service action is tracked, ensuring responsibility at each stage.
+                    </p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="border border-gray-800 rounded-xl p-6 bg-gray-900/60">
+                    <svg class="w-8 h-8 text-indigo-500 mb-3" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M3 12l3-3 4 4 6-6 5 5" />
+                        <path d="M3 21h18" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-white">
+                        Scalable Business Growth
+                    </h3>
+                    <p class="mt-2 text-sm text-gray-400">
+                        The system easily adapts as service demand and users increase.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <div class="mt-16 text-center">
+        <h3 class="text-2xl font-bold text-white">
+            Ready to Simplify Service Management?
+        </h3>
+        <p class="mt-3 text-gray-400">
+            Get started with SmartServe Solutions and experience smart service handling.
+        </p>
+
+        <div class="mt-6 flex justify-center gap-4 pb-8">
+            <button class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium">
+                Get Started
+            </button>
+            <button class="px-8 py-3 border border-gray-700 hover:bg-white/10 text-white rounded-lg font-medium">
+                Contact Us
+            </button>
+        </div>
+    </div>
+
+    </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 border-t border-gray-800 ">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+
+            <!-- Top Footer -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">
+                        SmartServe Solutions
+                    </h3>
+                    <p class="text-sm leading-relaxed">
+                        SmartServe Solutions is a web-based service management platform that
+                        helps customers request services, track status, and make secure
+                        online payments efficiently.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#features" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#works" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Our Services
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Online Service Requests</li>
+                        <li>Real-Time Service Tracking</li>
+                        <li>Secure Digital Payments</li>
+                        <li>Technician Assignment</li>
+                        <li>Reports & Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Contact
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Email: <span class="text-gray-300">support@smartserve.com</span></li>
+                        <li>Phone: <span class="text-gray-300">+91 9XXXXXXXXX</span></li>
+                        <li>Location: <span class="text-gray-300">India</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 my-8"></div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col sm:flex-row items-center justify-between text-sm">
+                <p>
+                    © 2025 SmartServe Solutions. All rights reserved.
+                </p>
+                <div class="flex gap-4 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
+
 </html>
