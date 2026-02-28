@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - SmartServe-Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+    <svg class="size-full absolute -z-10 inset-0" width="1440" height="720" viewBox="0 0 1440 720" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#1D293D" stroke-opacity=".7" d="M-15.227 702.342H1439.7" />
+        <circle cx="711.819" cy="372.562" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+        <circle cx="16.942" cy="20.834" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+        <path stroke="#1D293D" stroke-opacity=".7" d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7" />
+        <circle cx="782.595" cy="411.166" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+    </svg>
+
+    <nav
+        class="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-white text-sm">
+        <h1 class="text-xl font-bold">SmartServe-Solutions</h1>
+        <div class="hidden md:flex items-center gap-8 transition duration-500">
+            <a href="index.html" class="hover:text-slate-300 transition"> Home </a>
+            <a href="services.html" class="hover:text-slate-300 transition border-b-2 border-white pb-1">
+                Services
+            </a>
+            <a href="/stories" class="hover:text-slate-300 transition">
+                Track Request
+            </a>
+            <a href="/pricing" class="hover:text-slate-300 transition">
+                Contact Us
+            </a>
+        </div>
+
+        <button
+            class="hidden md:block px-6 py-2.5 text-black bg-white hover:bg-slate-200 active:scale-95 transition-all rounded-full">
+            Login
+        </button>
+        <button id="open-menu" class="md:hidden active:scale-90 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="py-20 text-gray-100 min-h-screen">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto text-center xl:max-w-2xl">
+                <h2 class="text-4xl font-bold leading-tight text-white mb-6">
+                    Our Premium Services
+                </h2>
+                <p class="mb-4 text-gray-400">
+                    Discover how SmartServe Solutions can transform your service management processes with our comprehensive suite of offerings.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Service 1 -->
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M8 7h8M8 11h8M8 15h6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Service Management</h3>
+                    <p class="text-gray-400 mb-6 line-clamp-3">
+                        End-to-end service management platform allowing clients to raise tickets, track progress, and communicate with technicians directly.
+                    </p>
+                    <a href="#" class="text-indigo-400 font-medium hover:text-indigo-300 flex items-center gap-2">
+                        Learn more 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4">
+                        <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full">Popular</span>
+                    </div>
+                    <div class="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Real-Time Tracking</h3>
+                    <p class="text-gray-400 mb-6 line-clamp-3">
+                        Monitor technician locations, receive status updates instantly, and visualize service performance through our advanced tracking tools.
+                    </p>
+                    <a href="#" class="text-emerald-400 font-medium hover:text-emerald-300 flex items-center gap-2">
+                        Learn more 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-rose-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-rose-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <rect x="3" y="7" width="18" height="10" rx="2" />
+                            <path d="M16 11h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Secure Payments</h3>
+                    <p class="text-gray-400 mb-6 line-clamp-3">
+                        Integrated payment gateways allowing your customers to pay for services securely and conveniently online.
+                    </p>
+                    <a href="#" class="text-rose-400 font-medium hover:text-rose-300 flex items-center gap-2">
+                        Learn more 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a4 4 0 0 0-4-4h-1" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M3 20v-2a4 4 0 0 1 4-4h2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Resource Allocation</h3>
+                    <p class="text-gray-400 mb-6 line-clamp-3">
+                        Smart algorithms to match the right technicians to the right jobs based on skills, location, and availability.
+                    </p>
+                    <a href="#" class="text-amber-400 font-medium hover:text-amber-300 flex items-center gap-2">
+                        Learn more 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-cyan-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M3 3v18h18" />
+                            <path d="M7 13l3-3 4 4 5-5" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Analytics & Reports</h3>
+                    <p class="text-gray-400 mb-6 line-clamp-3">
+                        Comprehensive dashboards offering insights into business performance, service durations, and customer satisfaction metrics.
+                    </p>
+                    <a href="#" class="text-cyan-400 font-medium hover:text-cyan-300 flex items-center gap-2">
+                        Learn more 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Revenue Management</h3>
+                    <p class="text-gray-400 mb-6 line-clamp-3">
+                        Streamline invoicing, manage subscriptions, and automatically handle billing cycles for your regular clients.
+                    </p>
+                    <a href="#" class="text-purple-400 font-medium hover:text-purple-300 flex items-center gap-2">
+                        Learn more 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Call to action block -->
+            <div class="mt-20 bg-gradient-to-r from-indigo-900 to-purple-900 rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
+                <div class="absolute w-64 h-64 bg-white/10 blur-3xl rounded-full -top-32 -left-32"></div>
+                <div class="absolute w-64 h-64 bg-indigo-500/20 blur-3xl rounded-full -bottom-32 -right-32"></div>
+                
+                <h3 class="text-3xl font-bold text-white mb-4 relative z-10">Ready to transform your services?</h3>
+                <p class="text-indigo-100 max-w-2xl mx-auto mb-8 relative z-10">Join thousands of businesses already using SmartServe Solutions to streamline their operations and impress their customers.</p>
+                <div class="flex justify-center gap-4 relative z-10">
+                    <button class="px-8 py-3 bg-white text-indigo-900 hover:bg-indigo-50 rounded-lg font-bold shadow-lg transition-colors">
+                        Get Started Free
+                    </button>
+                    <button class="px-8 py-3 bg-transparent border border-white hover:bg-white/10 text-white rounded-lg font-bold transition-colors">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 border-t border-gray-800 ">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+
+            <!-- Top Footer -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">
+                        SmartServe Solutions
+                    </h3>
+                    <p class="text-sm leading-relaxed">
+                        SmartServe Solutions is a web-based service management platform that
+                        helps customers request services, track status, and make secure
+                        online payments efficiently.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#works" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Our Services
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Online Service Requests</li>
+                        <li>Real-Time Service Tracking</li>
+                        <li>Secure Digital Payments</li>
+                        <li>Technician Assignment</li>
+                        <li>Reports & Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Contact
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Email: <span class="text-gray-300">support@smartserve.com</span></li>
+                        <li>Phone: <span class="text-gray-300">+91 9XXXXXXXXX</span></li>
+                        <li>Location: <span class="text-gray-300">India</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 my-8"></div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col sm:flex-row items-center justify-between text-sm">
+                <p>
+                    © 2025 SmartServe Solutions. All rights reserved.
+                </p>
+                <div class="flex gap-4 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

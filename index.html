@@ -30,15 +30,15 @@
         class="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-white text-sm">
         <h1 class="text-xl font-bold">SmartServe-Solutions</h1>
         <div class="hidden md:flex items-center gap-8 transition duration-500">
-            <a href="/" class="hover:text-slate-300 transition"> Home </a>
-            <a href="/products" class="hover:text-slate-300 transition">
+            <a href="index.html" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1"> Home </a>
+            <a href="services.html" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1">
                 Services
             </a>
-            <a href="/stories" class="hover:text-slate-300 transition">
+            <a href="/stories" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1">
                 Track Request
             </a>
-            <a href="/pricing" class="hover:text-slate-300 transition">
-                Content Us
+            <a href="/pricing" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1">
+                Contact Us
             </a>
         </div>
 
@@ -130,139 +130,91 @@
             </div>
 
             <!-- Features Grid -->
-            <div
-                class="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
+            <div class="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-left gap-y-8 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20">
                 <!-- Service 1 -->
-                <div class="relative">
-                    <div class="absolute -inset-1">
-                        <div
-                            class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
-                        </div>
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M8 7h8M8 11h8M8 15h6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
-                        <div class="p-9">
-                            <!-- Icon -->
-                            <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor"
-                                stroke-width="2" viewBox="0 0 24 24">
-                                <path d="M8 7h8M8 11h8M8 15h6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                                Online Service Requests
-                            </h3>
-                            <p class="mt-6 text-base text-gray-600">
-                                Customers can submit service requests online anytime,
-                                eliminating manual processes and improving convenience.
-                            </p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Online Service Requests</h3>
+                    <p class="text-gray-400">
+                        Customers can submit service requests online anytime, eliminating manual processes and improving convenience.
+                    </p>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="overflow-hidden bg-white shadow-md rounded-xl">
-                    <div class="p-9">
-                        <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round" />
                             <circle cx="12" cy="12" r="9" />
                         </svg>
-                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                            Real-Time Service Tracking
-                        </h3>
-                        <p class="mt-6 text-base text-gray-600">
-                            Track the status of service requests in real time, ensuring
-                            transparency and timely updates for customers.
-                        </p>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Real-Time Service Tracking</h3>
+                    <p class="text-gray-400">
+                        Track the status of service requests in real time, ensuring transparency and timely updates for customers.
+                    </p>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="relative">
-                    <div class="absolute -inset-1">
-                        <div
-                            class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
-                        </div>
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-rose-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-rose-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <rect x="3" y="7" width="18" height="10" rx="2" />
+                            <path d="M16 11h.01" />
+                        </svg>
                     </div>
-                    <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
-                        <div class="p-9">
-                            <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor"
-                                stroke-width="2" viewBox="0 0 24 24">
-                                <rect x="3" y="7" width="18" height="10" rx="2" />
-                                <path d="M16 11h.01" />
-                            </svg>
-                            <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                                Secure Digital Payments
-                            </h3>
-                            <p class="mt-6 text-base text-gray-600">
-                                Enable safe and reliable online payments through secure
-                                digital payment gateways integrated into the system.
-                            </p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Secure Digital Payments</h3>
+                    <p class="text-gray-400">
+                        Enable safe and reliable online payments through secure digital payment gateways integrated into the system.
+                    </p>
                 </div>
-
+                
                 <!-- Service 4 -->
-                <div class="overflow-hidden bg-white shadow-md rounded-xl">
-                    <div class="p-9">
-                        <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <path d="M17 20h5v-2a4 4 0 0 0-4-4h-1" />
                             <circle cx="9" cy="7" r="4" />
                             <path d="M3 20v-2a4 4 0 0 1 4-4h2" />
                         </svg>
-                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                            Technician Assignment
-                        </h3>
-                        <p class="mt-6 text-base text-gray-600">
-                            Admins can assign technicians efficiently based on availability
-                            and service requirements to ensure faster resolution.
-                        </p>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Technician Assignment</h3>
+                    <p class="text-gray-400">
+                        Admins can assign technicians efficiently based on availability and service requirements to ensure faster resolution.
+                    </p>
                 </div>
-
+                
                 <!-- Service 5 -->
-                <div class="relative">
-                    <div class="absolute -inset-1">
-                        <div
-                            class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
-                        </div>
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-cyan-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M3 3v18h18" />
+                            <path d="M7 13l3-3 4 4 5-5" />
+                        </svg>
                     </div>
-                    <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
-                        <div class="p-9">
-                            <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor"
-                                stroke-width="2" viewBox="0 0 24 24">
-                                <path d="M3 3v18h18" />
-                                <path d="M7 13l3-3 4 4 5-5" />
-                            </svg>
-                            <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                                Reports & Analytics
-                            </h3>
-                            <p class="mt-6 text-base text-gray-600">
-                                Generate detailed reports and analytics on services,
-                                technicians, and payments to support informed business
-                                decisions.
-                            </p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Reports & Analytics</h3>
+                    <p class="text-gray-400">
+                        Generate detailed reports and analytics on services, technicians, and payments to support informed business decisions.
+                    </p>
                 </div>
-
+                
                 <!-- Service 6 -->
-                <div class="overflow-hidden bg-white shadow-md rounded-xl">
-                    <div class="p-9">
-                        <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
+                <div class="group border border-gray-800 rounded-2xl p-8 bg-gray-900/40 hover:bg-gray-800/60 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/40 transition-colors">
+                        <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                             <rect x="3" y="3" width="7" height="7" />
                             <rect x="14" y="3" width="7" height="7" />
                             <rect x="14" y="14" width="7" height="7" />
                             <rect x="3" y="14" width="7" height="7" />
                         </svg>
-                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                            Centralized Admin Dashboard
-                        </h3>
-                        <p class="mt-6 text-base text-gray-600">
-                            Access a centralized dashboard to monitor service requests,
-                            technician activity, and payment status in real time.
-                        </p>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Centralized Admin Dashboard</h3>
+                    <p class="text-gray-400">
+                        Access a centralized dashboard to monitor service requests, technician activity, and payment status in real time.
+                    </p>
                 </div>
             </div>
         </div>
@@ -505,8 +457,8 @@
                         Quick Links
                     </h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
-                        <li><a href="#features" class="hover:text-white transition">Services</a></li>
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
                         <li><a href="#works" class="hover:text-white transition">How It Works</a></li>
                         <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
                     </ul>
