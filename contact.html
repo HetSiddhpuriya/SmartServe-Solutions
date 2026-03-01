@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - SmartServe-Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+    <svg class="size-full absolute -z-10 inset-0" width="1440" height="720" viewBox="0 0 1440 720" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#1D293D" stroke-opacity=".7" d="M-15.227 702.342H1439.7" />
+        <circle cx="711.819" cy="372.562" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+        <circle cx="16.942" cy="20.834" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+        <path stroke="#1D293D" stroke-opacity=".7" d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7" />
+        <circle cx="782.595" cy="411.166" r="308.334" stroke="#1D293D" stroke-opacity=".7" />
+    </svg>
+
+    <nav
+        class="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-white text-sm">
+        <h1 class="text-xl font-bold">SmartServe-Solutions</h1>
+        <div class="hidden md:flex items-center gap-8 transition duration-500">
+            <a href="index.html" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1"> Home </a>
+            <a href="services.html" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1">
+                Services
+            </a>
+            <a href="track-request.html" class="hover:text-slate-300 transition border-b-2 border-transparent hover:border-white pb-1">
+                Track Request
+            </a>
+            <a href="contact.html" class="hover:text-slate-300 transition border-b-2 border-white pb-1">
+                Contact Us
+            </a>
+        </div>
+
+        <button
+            class="hidden md:block px-6 py-2.5 text-black bg-white hover:bg-slate-200 active:scale-95 transition-all rounded-full">
+            Login
+        </button>
+        <button id="open-menu" class="md:hidden active:scale-90 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-20 text-gray-100 min-h-screen relative overflow-hidden">
+        <div class="absolute inset-0 m-auto w-[800px] h-[800px] bg-indigo-500/10 blur-[150px] rounded-full z-0 pointer-events-none"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-purple-500/10 blur-[100px] rounded-full z-0 pointer-events-none"></div>
+        
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-indigo-500/20 mb-6">
+                    <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight text-white mb-6">
+                    Get in Touch
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Have questions about our services or need support? Our dedicated team is here to help you navigate your service management journey.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+                <!-- Contact Information Cards -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- Location Card -->
+                    <div class="group bg-gray-900/40 border border-gray-800 rounded-2xl p-8 hover:bg-gray-800/60 transition-all duration-300">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center mr-6 group-hover:bg-indigo-500/40 transition-colors">
+                                <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Our Headquarters</h3>
+                                <p class="text-gray-400">
+                                    123 Tech Avenue, Sector 5<br>
+                                    Cyber City, India 400001
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="group bg-gray-900/40 border border-gray-800 rounded-2xl p-8 hover:bg-gray-800/60 transition-all duration-300">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mr-6 group-hover:bg-emerald-500/40 transition-colors">
+                                <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Email Us</h3>
+                                <p class="text-gray-400 mb-1">General Inquiries:</p>
+                                <a href="mailto:info@smartserve.com" class="text-emerald-400 hover:text-emerald-300 transition-colors">info@smartserve.com</a>
+                                <p class="text-gray-400 mb-1 mt-3">Support:</p>
+                                <a href="mailto:support@smartserve.com" class="text-emerald-400 hover:text-emerald-300 transition-colors">support@smartserve.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="group bg-gray-900/40 border border-gray-800 rounded-2xl p-8 hover:bg-gray-800/60 transition-all duration-300">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-rose-500/20 rounded-xl flex items-center justify-center mr-6 group-hover:bg-rose-500/40 transition-colors">
+                                <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Call Us</h3>
+                                <p class="text-gray-400 mb-1">Mon-Fri from 9am to 6pm</p>
+                                <a href="tel:+919876543210" class="text-rose-400 hover:text-rose-300 transition-colors text-lg">+91 98765 43210</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-gray-900/40 border border-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl backdrop-blur-sm h-full flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-white mb-8">Send us a message</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label for="first-name" class="block text-sm font-medium text-gray-400">First Name</label>
+                                    <input type="text" id="first-name" 
+                                           class="w-full px-4 py-3 bg-gray-950/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-600 outline-none transition-all"
+                                           placeholder="John" required>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="last-name" class="block text-sm font-medium text-gray-400">Last Name</label>
+                                    <input type="text" id="last-name" 
+                                           class="w-full px-4 py-3 bg-gray-950/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-600 outline-none transition-all"
+                                           placeholder="Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="email" class="block text-sm font-medium text-gray-400">Email Address</label>
+                                <input type="email" id="email" 
+                                       class="w-full px-4 py-3 bg-gray-950/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-600 outline-none transition-all"
+                                       placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="subject" class="block text-sm font-medium text-gray-400">Subject</label>
+                                <select id="subject" class="w-full px-4 py-3 bg-gray-950/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white outline-none transition-all appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select an option...</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="sales">Sales & Pricing</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="message" class="block text-sm font-medium text-gray-400">Message</label>
+                                <textarea id="message" rows="4" 
+                                          class="w-full px-4 py-3 bg-gray-950/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-white placeholder-gray-600 outline-none transition-all resize-none"
+                                          placeholder="How can we help you?" required></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition-colors shadow-lg shadow-indigo-500/30 flex items-center justify-center gap-2">
+                                <span>Send Message</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-400 border-t border-gray-800 ">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+
+            <!-- Top Footer -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">
+                        SmartServe Solutions
+                    </h3>
+                    <p class="text-sm leading-relaxed">
+                        SmartServe Solutions is a web-based service management platform that
+                        helps customers request services, track status, and make secure
+                        online payments efficiently.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="track-request.html" class="hover:text-white transition">Track Request</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Our Services
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Online Service Requests</li>
+                        <li>Real-Time Service Tracking</li>
+                        <li>Secure Digital Payments</li>
+                        <li>Technician Assignment</li>
+                        <li>Reports & Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4 uppercase">
+                        Contact
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Email: <span class="text-gray-300">support@smartserve.com</span></li>
+                        <li>Phone: <span class="text-gray-300">+91 9XXXXXXXXX</span></li>
+                        <li>Location: <span class="text-gray-300">India</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 my-8"></div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col sm:flex-row items-center justify-between text-sm">
+                <p>
+                    © 2025 SmartServe Solutions. All rights reserved.
+                </p>
+                <div class="flex gap-4 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
